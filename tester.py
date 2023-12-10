@@ -32,6 +32,12 @@ while not done:
 
     joystick = pygame.joystick.Joystick(0)
     joystick.init()
-    print(joystick.get_name())
-    if joystick.get_button(9):
-        print("Button pressed")
+    nb = joystick.get_numbuttons()
+    print(joystick.get_name() +': ' + str(nb))
+    for i in range(nb):
+      if joystick.get_button(i):
+          print("%02d " % (i), end='')
+      else:
+          print('   ', end='')
+    print('')
+
