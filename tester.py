@@ -27,7 +27,7 @@ while not done:
             joystick_id = joystick.get_id()
             print('Name: %s, ID: %s' %(name, joystick_id))
         started = True
-        time.sleep(4)
+        time.sleep(1)
         
 
     joystick = pygame.joystick.Joystick(0)
