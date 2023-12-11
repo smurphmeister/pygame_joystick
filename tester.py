@@ -40,4 +40,6 @@ while not done:
       else:
           print('   ', end='')
     print('')
+    # move back up 2 lines
+    print('\033[A\033[A\033[A')
 
